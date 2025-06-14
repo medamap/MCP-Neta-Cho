@@ -77,7 +77,12 @@ npm run build
 ### 各クライアントでの設定
 
 #### Claude Desktop
-`claude_desktop_config.json`に以下を追加：
+```bash
+# MCPサーバーを追加
+claude mcp add /absolute/path/to/MCP-Neta-Cho
+
+# または手動で claude_desktop_config.json に追加：
+```
 ```json
 {
   "mcpServers": {
@@ -87,6 +92,11 @@ npm run build
     }
   }
 }
+```
+
+```bash
+# MCPサーバーを削除する場合
+claude mcp remove mcp-neta-cho
 ```
 
 #### 開発・テスト用
