@@ -60,6 +60,8 @@ request_full_auto theme: "コンビニ" genre: "manzai"
 
 ## 📦 インストール
 
+### 基本的なセットアップ
+
 ```bash
 # リポジトリのクローン
 git clone https://github.com/medamap/MCP-Neta-Cho.git
@@ -70,8 +72,26 @@ npm install
 
 # ビルド
 npm run build
+```
 
-# MCPサーバーとして実行
+### 各クライアントでの設定
+
+#### Claude Desktop
+`claude_desktop_config.json`に以下を追加：
+```json
+{
+  "mcpServers": {
+    "mcp-neta-cho": {
+      "command": "node",
+      "args": ["/absolute/path/to/MCP-Neta-Cho/dist/index.js"]
+    }
+  }
+}
+```
+
+#### 開発・テスト用
+```bash
+# MCPサーバーとして直接実行
 npm start
 ```
 
