@@ -62,8 +62,8 @@ request_full_auto theme: "コンビニ" genre: "manzai"
 
 ```bash
 # リポジトリのクローン
-git clone https://github.com/yourusername/mcp-neta-cho.git
-cd mcp-neta-cho
+git clone https://github.com/medamap/MCP-Neta-Cho.git
+cd MCP-Neta-Cho
 
 # 依存関係のインストール
 npm install
