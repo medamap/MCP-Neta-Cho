@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+
+# MCP configuration (contains local paths)
+mcp.json
+
+# Development files
+.neta-cho/
+
+# Auto-session data (contains generated content)
+.neta-cho/auto-sessions/
+
+# Sensitive documentation (comedy theory learning materials)
+docs/memo/
+
+# Knowledge base (contains learning materials)  
+knowledge-base/
+
+# README for MCP
+README-mcp.md
+
+# macOS
+.DS_Store
